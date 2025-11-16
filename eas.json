@@ -15,8 +15,7 @@
       },
       "env": {
         "EXPO_NO_GIT_STATUS": "1"
-      },
-      "node": "18.x"
+      }
     },
     "production": {
       "android": {
@@ -24,8 +23,7 @@
       },
       "env": {
         "EXPO_NO_GIT_STATUS": "1"
-      },
-      "node": "18.x"
+      }
     }
   },
   "submit": {
