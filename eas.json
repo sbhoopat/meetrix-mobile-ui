@@ -8,7 +8,8 @@
     "development": {
       "distribution": "internal",
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "autoIncrement": true
       },
       "env": {
         "EXPO_NO_GIT_STATUS": "1"
@@ -17,7 +18,8 @@
     "preview": {
       "distribution": "internal",
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "autoIncrement": true
       },
       "env": {
         "EXPO_NO_GIT_STATUS": "1"
@@ -25,7 +27,8 @@
     },
     "production": {
       "android": {
-        "buildType": "apk"
+        "buildType": "app-bundle",
+        "autoIncrement": true
       },
       "env": {
         "EXPO_NO_GIT_STATUS": "1"
@@ -36,4 +39,3 @@
     "production": {}
   }
 }
-
