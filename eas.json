@@ -11,11 +11,17 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_NO_GIT_STATUS": "1"
       }
     },
     "production": {
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_NO_GIT_STATUS": "1"
       }
     }
   },
