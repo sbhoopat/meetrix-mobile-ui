@@ -1,24 +1,19 @@
 import React from 'react';
 import { StatusBar, StyleSheet, View } from 'react-native';
-import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
-import LiveBusLocationSender from "./src/components/LiveBusLocationSender"; // Make sure the path is correct
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from './src/navigation/AppNavigator';
 
 function App() {
   return (
     <SafeAreaProvider>
       <StatusBar barStyle="dark-content" />
-      <AppContent />
+      <NavigationContainer>
+        <View style={styles.container}>
+          <AppNavigator />
+        </View>
+      </NavigationContainer>
     </SafeAreaProvider>
-  );
-}
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      <LiveBusLocationSender safeAreaInsets={safeAreaInsets} />
-    </View>
   );
 }
 
