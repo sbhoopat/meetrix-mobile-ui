@@ -58,11 +58,13 @@ echo ========================================
 echo   Step 3: Building APK
 echo ========================================
 echo.
+echo Keystore already configured - proceeding with build
 echo This will take 10-15 minutes...
 echo Building in the cloud (no Android Studio needed)
 echo.
 
-call npx eas-cli build --platform android --profile preview --non-interactive
+call npx eas-cli build --platform android --profile preview
+
 
 if %ERRORLEVEL% NEQ 0 (
     echo.
